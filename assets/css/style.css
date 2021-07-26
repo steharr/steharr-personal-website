@@ -1,0 +1,573 @@
+/******************* Fonts *******************/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Mono:wght@100;400;500;700&family=Roboto+Slab:wght@400;700&display=swap');
+/******************* General *******************/
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-weight:100;
+    background-color:#264653;
+    color:#ffff;
+}
+.page-header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 2rem 0;
+}
+a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+a:hover {
+    color: #fff;
+}
+hr {
+    display: block;
+    margin: 3rem 3rem 0 3rem;
+    border-top: .25rem dashed #28424D;
+}
+.bold-font {
+    font-weight: 600;
+}
+/* Default button styling throughout site */
+.btn-steharr-standard {
+    border: 1px solid #2b343b;
+    color: #2b343b;
+    background-color: #E9C46A;
+    -webkit-transition: 
+    background-color 0.35s ease-in-out,
+    font-weight 0.35s ease-in-out; 
+    -moz-transition: 
+    background-color 0.35s ease-in-out,
+    font-weight 0.35s ease-in-out;  
+    -o-transition: 
+    background-color 0.35s ease-in-out,
+    font-weight 0.35s ease-in-out; 
+    transition: 
+    background-color 0.35s ease-in-out,
+    font-weight 0.35s ease-in-out; 
+}
+.btn-steharr-standard:hover {
+    background-color: #F2DCA6;
+    font-weight: 600;
+}
+#about,
+#skills,
+#projects,
+#contact {
+    /* padding added to ensure page headings visible after clicking navbar links */
+    padding-top: 2rem;   
+}
+/********************************************************* SITE NAVBAR *********************************************************/
+.navbar {
+    font-family: 'Open Sans', sans-serif;
+}
+.navbar-bottom-border {
+    border-bottom: 1px solid #fff;
+}
+.bg-gunmetal {
+    background-color: #2B343B;
+}
+/********************************************************* LANDING PAGE *********************************************************/
+/******************* landing Page Hero Profile Icon *******************/
+/*circular div which houses profile image */
+.landing-hero-image-circle {
+    height: 16rem;
+    width: 16rem;
+    border-radius: 50%;
+    margin: 5rem auto 2rem auto;
+    background-color: #E76F51; 
+    border: .75rem solid #F4A261;   
+    background-image: url('../images/hero-image.png');
+    background-size: cover;
+}
+.landing-hero-blurb-text{
+    text-align: center;
+}
+.landing-hero-blurb-text > h2{
+    font-size: 1.25rem;
+    padding: 0;
+}
+.landing-hero-blurb-text > h1{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    font-size: 2.7rem;
+}
+.quicklink-contact{
+    text-align: center;
+}
+.landing-navigation {
+    height: 20vh;
+}
+.landing-nav-button-container {
+    display: none;
+}
+/********************************************************* ABOUT PAGE *********************************************************/
+.about-timeline-visual {
+    margin: 0 1rem;
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.about-timeline-image {
+    border: solid;
+    background-color: #E76F51;
+    border: .5rem solid #F4A261;
+    background-size: cover;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+}
+.about-timeline-image.study {
+    background-image: url('../images/about-study.png');
+}
+.about-timeline-image.work {
+    background-image: url('../images/about-work.png');
+}
+.about-timeline-image.now {
+    background-image: url('../images/about-now.png');
+}
+.timeline-dashed-line {
+    border-left: .2rem dashed #F4A261;
+}
+.container-timeline-item {
+    margin: 0 1rem;
+}
+.timeline-item-description {
+    position: relative;
+    padding-left: 1rem;
+}
+.timeline-item-heading {
+    display:inline-block;
+    border-bottom: .1rem solid #fff;
+    padding: .25rem .25rem;
+}
+/* removed bottom margin from p elements to allow timeline to connect */
+.timeline-item-description p {
+    margin-bottom: 0;
+}
+.timeline-item-description-text {
+    background-color: #28424D;
+    padding: 1rem;
+}
+/* timeline disc (adapted from rosie odenkirk practice bootstrap project) */
+.timeline-item-heading::before {
+    display: block;
+    position: absolute;
+    left: -.6rem;
+    top: 2rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: .2rem solid #F4A261;
+    content: '';
+    background: #E9C46A;
+}
+/********************************************************* SKILLS PAGE *********************************************************/
+.skills-box-container {
+    color: #fff;
+    border-radius: 0;
+    padding: 1rem;
+    background-color: #2A3941;
+    width: 95%;
+    margin: 0 auto 1rem auto;
+}
+.skills-box-header {
+    display:inline-block;
+    border-bottom: .1rem solid #fff;
+    padding-bottom: .25rem;
+}
+.coding-languages-item{
+    margin: .5rem .1rem;
+    padding:.1rem .1rem;
+}
+.language-type {
+    padding: 0;
+    font-size:75%;
+}
+.coding-languages-progress-bar{
+    padding: 0;
+    border-radius: 0;
+    margin-top:.25rem;
+    background-color:#272F36; 
+}
+.percentage{
+    /* Made using coolors gradient maker at: https://coolors.co/gradient-maker/e76f51-e9c46a?position=0,100&opacity=100,100&type=linear&rotation=0 */
+    background: hsla(12, 76%, 61%, 1);
+    background: linear-gradient(0deg, hsla(12, 76%, 61%, 1) 0%, hsla(43, 74%, 66%, 1) 100%);
+    background: -moz-linear-gradient(0deg, hsla(12, 76%, 61%, 1) 0%, hsla(43, 74%, 66%, 1) 100%);
+    background: -webkit-linear-gradient(0deg, hsla(12, 76%, 61%, 1) 0%, hsla(43, 74%, 66%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E76F51", endColorstr="#E9C46A", GradientType=1 );
+}
+ul {
+    padding:0 0 0 1rem;
+    list-style-type: none;
+}
+.skills-item-tag {
+    display: inline-block;
+    background-color: #E76F51;
+    font-weight: 600;
+    font-size: 90%;
+    border-radius:.25rem;
+    padding: .125rem;
+    margin: .5rem 0;
+}
+.expertise-description{
+    margin-bottom: 0;
+}
+.soft-skills-container {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:1rem 0;
+}
+.soft-skill-item-big {
+    height:7rem;
+    width: 7rem;
+    border-radius: 50%;
+    background-color: #E76F51;
+}
+.soft-skill-item-small {
+    height:80%;
+    width: 80%;
+    border-radius: 50%;
+    background-color: #272F36;
+    top:10%;
+    left:10%;
+    position: relative;
+    padding-top:1.5rem;
+}
+.soft-skill-item-small h6 {
+    text-align: center;
+    font-size: 80%;
+    font-weight: 600;
+    width: 80%;
+    margin: auto;
+}
+/********************************************************* PROJECTS PAGE *********************************************************/
+.project-card {
+    border: none;
+    margin-bottom: 1rem;;
+    background-color: #2A3941;
+    border-radius: 0;
+}
+.project-card-image {
+    height: 50%;
+    padding: 1rem 1rem 0 1rem;
+}
+.project-card-image img {
+    border-radius: 0;
+    object-fit: cover;
+    height: 100%;
+}
+.card-body {
+    padding-bottom: 0;
+    font-size: 75%;
+}
+.card-title {
+    display: inline-block;
+    border-bottom: .1rem solid #fff;
+    padding-bottom: .25rem;
+}
+.card-text {
+    padding: .25rem;
+    background-color: #31515E;
+}
+.card-tags {
+    line-height: 1.5rem;
+}
+.programming-lang-tag {
+    font-weight: 600;
+    border-radius:.25rem;
+    padding: .2rem;
+}
+.color-html-orange {
+    background-color: #e34c26;
+    color: #fafafa;
+}
+.color-css-blue {
+    background-color: #2965f1;
+    color: #fff;
+}
+.color-javascript-yellow {
+    background-color: #f0db4f;
+    color: #323330;
+}
+.color-python-blue {
+    background-color: #306998;
+    color: #FFD43B;
+}
+.color-vba-green {
+    background-color: #1d6f42;
+    color: #fff;
+}
+
+.container-card-link-github {
+    text-align: center;
+}
+.card-link-github {
+    margin-bottom: 1rem;
+}
+.ribbon-work-in-progress {
+    background-color: #E76F51;
+    border: .1rem solid #2b343b;
+    color: #2b343b;
+    text-align: center;
+    padding: .2rem;
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+    width: 9rem;
+    height: 1.5rem;
+    border-radius: 2%;
+}
+.ribbon-work-in-progress h5 {
+font-size: 80%;
+padding: 0;
+}
+/********************************************************* CONTACT PAGE *********************************************************/
+.contact-info-box {
+    text-align: center;
+    display:flex;
+    flex-flow: column;
+    margin-bottom: 1rem;
+}
+.contact-info-box a,
+.contact-info-box p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#text-large-screen {
+    display: none;
+}
+ .contact-form {
+    background-color: #2A3941;
+    color: #fff;
+    font-weight:600;
+    border-radius: 0;
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+}
+.contact-form-item {
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    width: 90%;
+    margin: 1rem auto;
+}
+.form-input {
+    background-color: #272F36;
+    color: #fff;
+}
+input[type=text],
+input[type=email],
+textarea {
+    padding-left: .5rem;
+    padding-right: .5rem;
+    border-style:none;
+    border-bottom: .1rem solid #96ACB7;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+/* Change Autocomplete styling in Chrome*/
+/* adapted from CSS tricks: https://css-tricks.com/snippets/css/change-autocomplete-styles-webkit-browsers/ */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0px 1000px #4D5D6A inset;
+  box-shadow: 0 0 0px 1000px #4D5D6A inset;
+}
+/********************************************************* FOOTER *********************************************************/
+footer {
+    background-color: #2A3941;
+    color: #fff;
+    padding-top: 1rem;
+    border-top: .25rem solid #2B343B;
+    margin-top: 2rem;
+}
+.footer-item {
+    text-align: left;
+    font-size: 70%;
+    padding: .5rem 3rem;
+}
+.footer-item a {
+    font-size: 1.75rem;
+    color: #E9C46A;
+    -webkit-transition: all 0.35s ease-in-out; 
+    -moz-transition: all 0.35s ease-in-out; 
+    -o-transition: all 0.35s ease-in-out; 
+    transition: all 0.35s ease-in-out; 
+}
+#copyright {
+    text-align: center;
+    font-size: .75rem;
+}
+
+/************************************** MEDIA QUERIES **************************************/
+/* Larger than Mobile Screen Queries */
+@media screen and (min-width: 780px) {
+    /******* GENERAL *******/
+    .page-header {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+    /*******************LANDING PAGE*******************/
+    #landing {
+        height: 100vh;
+    }
+    .quicklink-contact {
+        display: none;
+    }
+    /*** hero information ***/
+    .landing-intro{
+        height: 45vh;
+    }
+    .landing-intro-visual{
+        padding-top: 20vh;
+        padding-left: 6%;
+    }
+    .landing-intro-blurb{
+        padding-top: 26vh;
+        padding-right: 5%;
+    }
+    .landing-hero-image-circle {
+        height: 20rem;
+        width: 20rem;
+        margin: 0;
+    }
+    .landing-navigation{
+        height: 50vh;
+    }
+    .landing-navigation{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+    .landing-hero-blurb-text {
+        text-align:left;
+    }
+    /*** navigation menu ***/
+    .landing-nav-button-container {
+        display: flex;
+        justify-content: space-around;
+    }
+    .landing-nav-button-circle {
+        height: 8rem;
+        width: 8rem;
+        border-radius: 50%;
+        background-color: #E76F51; 
+        border: .5rem solid #F4A261; 
+        font-size: 5rem;
+        text-align: center;
+    }
+    .landing-nav-button-icon {
+        position: relative;
+        bottom: .35rem;
+    }
+    .landing-nav-button-text {
+        position: relative;
+        top: 1rem;
+    }
+    .landing-nav-button-link {
+        transition: color .25s ease-in-out;
+    }
+    .landing-nav-button-link:hover {
+        text-decoration: none;
+        color: #E9C46A;
+    }
+    /*******************ABOUT PAGE*******************/
+    .about-timeline-image {
+        height: 16rem;
+        width: 16rem;
+    }
+    /*******************SKILLS PAGE*******************/
+    .language-type {
+        font-size: 100%;
+    }
+    /*******************PROJECTS PAGE*******************/
+    /* keep all project card heights consistent */
+    .project-card{
+        height: 95%;
+    }
+    .card-text{
+       margin-bottom: .5rem; 
+    }
+    /*******************CONTACT PAGE*******************/
+    .contact-info-box {
+        flex-flow: column-reverse;
+        text-align: left;
+        padding-bottom: 25%;
+        padding-right: 5%;
+        margin-bottom: 0;
+    }
+    .contact-form {
+        margin:0 auto;
+        width:85%;
+    }
+    #text-small-screen {
+        display: none;
+    }
+    #text-large-screen {
+        display: inline;
+    }
+    /*******************FOOTER*******************/
+    .footer-item {
+        padding-left: 20%;
+        padding-right: 10%;
+    }
+    .footer-item a:hover {
+        color: #fff;
+    }
+}
+ /* Large Desktop Screen Queries */
+@media screen and (min-width: 1200px) {
+    /*******************LANDING PAGE*******************/
+    .landing-intro-visual{
+        padding-left: 15%;
+    }
+    .landing-intro-blurb{
+        padding-right: 15%;
+    }
+    /*******************ABOUT PAGE*******************/
+    .timeline-item-description-text {
+        height: 37.5rem;
+    }
+    /* make the dashed lines appear horizontally */
+     .timeline-dashed-line {
+        border-left: none;
+        border-top:.2rem dashed #F4A261;;
+    } 
+    /* remove the dashed lines from the images */
+     .about-timeline-visual.timeline-dashed-line {
+        border: none;
+    } 
+    /* move the timeline disc up to the (now) horizontal dashed line */
+     .timeline-item-heading::before {
+        top: -2.3rem;
+        left: 47.5%;
+        height: 1.5rem;
+        width: 1.5rem;
+    } 
+    /* Change the size of the timeline image */
+     .about-timeline-image {
+        height: 18rem;
+        width: 18rem;
+    } 
+    /* seperate description box from timeline  */
+     .container-timeline-item {
+        margin: 0;
+        padding-top: 1.5rem;
+    }
+}
