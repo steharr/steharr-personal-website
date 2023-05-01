@@ -1,15 +1,16 @@
 import data from '../json/projects.json' assert { type: 'json' };
-console.log(data);
-
 const container = document.getElementById("projectsList");
 
-data.forEach(project =>{
+const projects = data.sort((a,b)=>{
+    return (a.order > b.order) ? 1 : -1;
+})
+
+projects.forEach(project =>{
     const div = document.createElement("div");
     div.className = "col-sm-12 col-md-6 col-lg-4"
     div.innerHTML = generateHtml(project);
     container.appendChild(div);
 })
-
 
 function generateHtml(project){
     let html = `
@@ -25,7 +26,7 @@ function generateHtml(project){
                 ${project.description}
             </p>
             <p class="card-tags">
-            Languages:`
+            Technologies:`
         
             if (Array.from(project.languages).includes('html')){
                 html = html + `<span class="programming-lang-tag color-html-orange ml-1">HTML</span>`
@@ -41,6 +42,26 @@ function generateHtml(project){
                     
             if (Array.from(project.languages).includes('java')){
                 html = html + `<span class="programming-lang-tag color-java-green ml-1">Java</span>`
+            }
+                    
+            if (Array.from(project.languages).includes('python')){
+                html = html + `<span class="programming-lang-tag color-python-blue ml-1">Python</span>`
+            }
+                    
+            if (Array.from(project.languages).includes('postgres')){
+                html = html + `<span class="programming-lang-tag color-postgres ml-1">PostgreSql</span>`
+            }
+                    
+            if (Array.from(project.languages).includes('spring')){
+                html = html + `<span class="programming-lang-tag color-spring ml-1">Spring</span>`
+            }
+                    
+            if (Array.from(project.languages).includes('mongodb')){
+                html = html + `<span class="programming-lang-tag color-mongodb ml-1">MongoDB</span>`
+            }
+                    
+            if (Array.from(project.languages).includes('flask')){
+                html = html + `<span class="programming-lang-tag color-flask ml-1">Flask</span>`
             }
 html = html + `</p>
         </div>

@@ -304,6 +304,22 @@ ul {
     background-color: #1d6f42;
     color: #fff;
 }
+.color-mongodb {
+    background-color: #0e3821;
+    color: #fff;
+}
+.color-flask {
+    background-color: #5c5d5c;
+    color: #fff;
+}
+.color-postgres {
+    background-color: #a30da5;
+    color: #fff;
+}
+.color-spring {
+    background-color: #1dba1a;
+    color: #fff;
+}
 
 .container-card-link-github {
     text-align: center;

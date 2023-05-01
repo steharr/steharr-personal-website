@@ -6,7 +6,8 @@
         "pictureUrl":"assets/images/project_card_cat_and_mouse.png",
         "githubUrl":"https://github.com/steharr/ms2-cat-and-mouse-game",
         "liveSite":"https://steharr.github.io/ms2-cat-and-mouse-game/",
-        "languages":["html","css","javascript"]
+        "languages":["html","css","javascript"],
+        "order":1
     },
     {
         "id":2,
@@ -15,6 +16,17 @@
         "pictureUrl":"assets/images/project_card_escape_the_chase.png",
         "githubUrl":"https://github.com/steharr/chase-game",
         "liveSite":"https://chase-7z6n.onrender.com",
-        "languages":["java","javascript"]
+        "languages":["java","spring","postgres"],
+        "order":3
+    },
+    {
+        "id":3,
+        "title":"HolidayHub",
+        "description": "Holiday review website where users can create an account and write reviews on locations they have travelled to",
+        "pictureUrl":"assets/images/project_card_holiday_hub.png",
+        "githubUrl":"https://github.com/steharr/ms3-holiday-review",
+        "liveSite":"https://ms3-holiday-review.onrender.com/",
+        "languages":["python","flask","mongodb"],
+        "order":2
     }
 ]
