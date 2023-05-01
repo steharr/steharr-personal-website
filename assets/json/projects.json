@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "title":"Cat and Mouse",
+        "description": "fast-paced tactical chase game.",
+        "pictureUrl":"assets/images/project_card_cat_and_mouse.png",
+        "githubUrl":"https://github.com/steharr/ms2-cat-and-mouse-game",
+        "liveSite":"https://steharr.github.io/ms2-cat-and-mouse-game/",
+        "languages":["html","css","javascript"]
+    },
+    {
+        "id":2,
+        "title":"Escape the chase",
+        "description": "Upgraded chase game with java back end",
+        "pictureUrl":"assets/images/project_card_escape_the_chase.png",
+        "githubUrl":"https://github.com/steharr/chase-game",
+        "liveSite":"https://chase-7z6n.onrender.com",
+        "languages":["java","javascript"]
+    }
+]
