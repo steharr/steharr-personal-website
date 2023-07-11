@@ -28,5 +28,15 @@
         "liveSite":"https://ms3-holiday-review.onrender.com/",
         "languages":["python","flask","mongodb"],
         "order":2
+    },
+    {
+        "id":4,
+        "title":"Workout Tracker",
+        "description": "Gym workout tracker being built with Spring boot back end and Angular front end",
+        "pictureUrl":"assets/images/project_card_workout_tracker.png",
+        "githubUrl":"https://github.com/steharr/wt-back",
+        "liveSite":"https://wt-workout-tracker-ui.onrender.com",
+        "languages":["java","spring","angular"],
+        "order":4
     }
 ]

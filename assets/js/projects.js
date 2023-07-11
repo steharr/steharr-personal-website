@@ -63,6 +63,9 @@ function generateHtml(project){
             if (Array.from(project.languages).includes('flask')){
                 html = html + `<span class="programming-lang-tag color-flask ml-1">Flask</span>`
             }
+            if (Array.from(project.languages).includes('angular')){
+                html = html + `<span class="programming-lang-tag color-angular ml-1">Angular</span>`
+            }
 html = html + `</p>
         </div>
         <div class="container-card-link-github">
