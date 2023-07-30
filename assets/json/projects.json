@@ -38,5 +38,15 @@
         "liveSite":"https://wt-workout-tracker-ui.onrender.com",
         "languages":["java","spring","angular"],
         "order":4
+    },
+    {
+        "id":5,
+        "title":"Shoop",
+        "description": "Shoe website built using Django with Stripe integration",
+        "pictureUrl":"assets/images/project_card_shoop.PNG",
+        "githubUrl":"https://github.com/steharr/ms4-shoop",
+        "liveSite":"https://ms4-shoop.onrender.com/",
+        "languages":["python","django", "stripe"],
+        "order":5
     }
 ]
